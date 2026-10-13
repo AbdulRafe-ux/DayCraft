@@ -1,0 +1,13 @@
+.auth-page { min-height: 100dvh; display: grid; place-items: center; padding: 32px 16px; }
+.auth-wrap { width: min(450px, 100%); display: grid; gap: 24px; }
+.auth-wrap .logo { justify-self: center; }
+.auth-intro { text-align: center; display: grid; gap: 6px; }
+.auth-intro h1 { font-size: clamp(1.8rem, 5vw, 2.2rem); }
+.auth-panel {
+  display: grid; gap: 18px; padding: 28px; border: 1.5px solid var(--line);
+  border-top: 5px solid var(--gold); border-radius: 22px; box-shadow: var(--shadow);
+}
+.auth-switch { text-align: center; font-size: 0.95rem; }
+.auth-switch a { font-weight: 600; }
+.auth-back { justify-self: center; font-size: 0.9rem; }
+@media (max-width: 480px) { .auth-panel { padding: 20px; } }

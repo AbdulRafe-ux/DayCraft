@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 970 400" role="img" aria-label="DayCraft architecture: React frontend to Express and Node.js backend to MongoDB database">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#344A73"/>
+    </marker>
+    <clipPath id="c1"><rect x="40" y="90" width="230" height="250" rx="18"/></clipPath>
+    <clipPath id="c2"><rect x="370" y="90" width="230" height="250" rx="18"/></clipPath>
+    <clipPath id="c3"><rect x="700" y="90" width="230" height="250" rx="18"/></clipPath>
+  </defs>
+  <style>
+    text { font-family: "Segoe UI", system-ui, Arial, sans-serif; fill: #344A73; }
+    .title { font-family: Georgia, "Palatino Linotype", serif; font-size: 26px; font-weight: 700; }
+    .head { font-size: 17px; font-weight: 700; }
+    .body { font-size: 14px; }
+    .strong { font-size: 14px; font-weight: 700; }
+    .lab { font-size: 12.5px; font-weight: 600; }
+  </style>
+  <rect width="970" height="400" fill="#F8F5EB"/>
+  <text class="title" x="40" y="48">DayCraft system architecture</text>
+  <rect x="40" y="58" width="90" height="4" rx="2" fill="#D5B45B"/>
+
+  <!-- Box 1 -->
+  <rect x="40" y="90" width="230" height="250" rx="18" fill="#F8F5EB" stroke="#0F5B55" stroke-width="3"/>
+  <g clip-path="url(#c1)"><rect x="40" y="90" width="230" height="52" fill="#0F5B55"/></g>
+  <text class="head" x="155" y="123" text-anchor="middle" style="fill:#F8F5EB">React frontend</text>
+  <text class="strong" x="58" y="172">Client (browser)</text>
+  <text class="body" x="58" y="198">Vite + React Router</text>
+  <text class="body" x="58" y="222">Pages: Home, Register,</text>
+  <text class="body" x="58" y="244">Login, Dashboard</text>
+  <text class="body" x="58" y="268">Auth context + API service</text>
+  <text class="body" x="58" y="300">http://localhost:5173</text>
+
+  <!-- Arrow 1 -->
+  <line x1="274" y1="205" x2="366" y2="205" stroke="#344A73" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="366" y1="245" x2="274" y2="245" stroke="#344A73" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  <text class="lab" x="320" y="192" text-anchor="middle">HTTP</text>
+  <text class="lab" x="320" y="225" text-anchor="middle">JSON</text>
+
+  <!-- Box 2 -->
+  <rect x="370" y="90" width="230" height="250" rx="18" fill="#F8F5EB" stroke="#344A73" stroke-width="3"/>
+  <g clip-path="url(#c2)"><rect x="370" y="90" width="230" height="52" fill="#344A73"/></g>
+  <text class="head" x="485" y="123" text-anchor="middle" style="fill:#F8F5EB">Express / Node.js</text>
+  <text class="strong" x="388" y="172">REST API (server)</text>
+  <text class="body" x="388" y="198">Routes + controllers</text>
+  <text class="body" x="388" y="222">JWT in HttpOnly cookie</text>
+  <text class="body" x="388" y="244">Validation, bcrypt, Helmet</text>
+  <text class="body" x="388" y="268">Ownership checks per task</text>
+  <text class="body" x="388" y="300">http://localhost:5000</text>
+
+  <!-- Arrow 2 -->
+  <line x1="604" y1="205" x2="696" y2="205" stroke="#344A73" stroke-width="3" marker-end="url(#arrow)"/>
+  <line x1="696" y1="245" x2="604" y2="245" stroke="#344A73" stroke-width="3" stroke-dasharray="6 5" marker-end="url(#arrow)"/>
+  <text class="lab" x="650" y="192" text-anchor="middle">Mongoose</text>
+  <text class="lab" x="650" y="225" text-anchor="middle">documents</text>
+
+  <!-- Box 3 -->
+  <rect x="700" y="90" width="230" height="250" rx="18" fill="#F8F5EB" stroke="#D5B45B" stroke-width="3"/>
+  <g clip-path="url(#c3)"><rect x="700" y="90" width="230" height="52" fill="#D5B45B"/></g>
+  <text class="head" x="815" y="123" text-anchor="middle">MongoDB database</text>
+  <text class="strong" x="718" y="172">Collection: users</text>
+  <text class="body" x="718" y="196">name, email, passwordHash</text>
+  <text class="strong" x="718" y="232">Collection: tasks</text>
+  <text class="body" x="718" y="256">title, description, category,</text>
+  <text class="body" x="718" y="278">priority, status, dueDate,</text>
+  <text class="body" x="718" y="300">userId (owner), timestamps</text>
+
+  <text class="body" x="40" y="378">Solid arrow: request. Dashed arrow: response. Every task query is filtered by the logged-in user's id.</text>
+</svg>

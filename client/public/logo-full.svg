@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 270 64" role="img" aria-label="DayCraft">
+  <rect x="4" y="11" width="56" height="49" rx="13" fill="#0F5B55"/>
+  <rect x="18" y="3" width="7" height="16" rx="3.5" fill="#D5B45B"/>
+  <rect x="39" y="3" width="7" height="16" rx="3.5" fill="#D5B45B"/>
+  <path d="M14 27h36" stroke="#F8F5EB" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>
+  <path d="M20 41l8 8 16-17" fill="none" stroke="#F8F5EB" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="76" y="46" font-family="'Iowan Old Style','Palatino Linotype',Palatino,Georgia,serif" font-size="38" font-weight="700" letter-spacing="-0.5"><tspan fill="#344A73">Day</tspan><tspan fill="#0F5B55">Craft</tspan></text>
+</svg>
